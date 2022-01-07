@@ -1,5 +1,5 @@
 Package: sp
-Version: 1.4-7
+Version: 2.1-1
 Title: Classes and Methods for Spatial Data
 Authors@R: c(person("Edzer", "Pebesma", role = c("aut", "cre"),
 				email = "edzer.pebesma@uni-muenster.de"),
@@ -15,8 +15,8 @@ Authors@R: c(person("Edzer", "Pebesma", role = c("aut", "cre"),
 			person("Josh", "O'Brien", role = "ctb"),
 			person("Joseph", "O'Rourke", role = "ctb"))
 Depends: R (>= 3.0.0), methods
-Imports: utils, stats, graphics, grDevices, lattice, grid
-Suggests: RColorBrewer, rgdal (>= 1.2-3), rgeos (>= 0.3-13), gstat, maptools, deldir, knitr, rmarkdown
+Imports: utils, stats, graphics, grDevices, lattice, grid, sf
+Suggests: RColorBrewer, gstat, deldir, knitr, rmarkdown
 Description: Classes and methods for spatial
   data; the classes document where the spatial location information
   resides, for 2D or 3D data. Utility functions are provided, e.g. for
@@ -44,5 +44,6 @@ Collate: bpy.colors.R AAA.R Class-CRS.R CRS-methods.R
 	recenter.R dms.R gridlines.R spdists.R rbind.R flipSGDF.R
 	chfids.R loadmeuse.R compassRose.R surfaceArea.R spOptions.R
 	subset.R disaggregate.R sp_spat1.R merge.R aggregate.R
+        elide.R GE_png.R sp2WB.R sun.R sun-methods.R
 VignetteBuilder: knitr
 

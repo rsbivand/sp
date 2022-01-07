@@ -28,6 +28,8 @@ importFrom(grDevices, rgb, heat.colors)
 import(methods)
 import(lattice)
 
+importFrom(sf, st_read)
+
 export(
 	CRS,
 	identicalCRS,
@@ -274,6 +276,12 @@ exportMethods(
 	spTransform,
         rebuild_CRS
 )
+
+# from maptools
+exportMethods(elide)
+exportMethods("crepuscule", "sunriset", "solarnoon", "solarpos")
+export(GE_SpatialGrid, kmlOverlay, Sobj_SpatialGrid)
+export(sp2WB)
 
 S3method(as.array, SpatialGridDataFrame)
 
